@@ -8,5 +8,7 @@ blockingLabels:
   - blocked
 
 rules:
+  - requiredLabels:
+      - dependencies
   - minApprovals:
       OWNER: 1
