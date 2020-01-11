@@ -1,4 +1,5 @@
 [![Actions Status](https://github.com/sbstnkng/automated-security-updates-with-github/workflows/Build%20and%20Deploy/badge.svg)](https://github.com/sbstnkng/automated-security-updates-with-github/actions)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=sbstnkng/automated-security-updates-with-github)](https://dependabot.com)
 
 # Automated security updates with GitHub
 
