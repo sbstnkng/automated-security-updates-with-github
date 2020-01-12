@@ -88,12 +88,59 @@
           </section>
           <section>
             <p>
-              Modern applications rely on hundreds of open source dependencies.
+              Modern applications rely on
+              <span class="fragment highlight-blue"
+                >hundreds of open source dependencies</span
+              >
             </p>
             <p>
               Staying on top of security vulnerabilities in those dependencies
-              requires constant attention.
+              <span class="fragment highlight-blue"
+                >requires constant attention</span
+              >
             </p>
+          </section>
+          <section>
+            <p>But...</p>
+          </section>
+          <section>
+            <p>
+              ...to keep track of security vulnerabilities in all projects can
+              be really painful
+            </p>
+          </section>
+          <section>
+            <p>Tools can reduce the pain</p>
+            <pre>
+              <code class="hljs xml" data-trim data-line-numbers="4-5">
+  <pluginMangement>
+    <plugins>
+      <plugin>
+        <groupId>org.sonatype.ossindex.maven</groupId>
+        <artifactId>ossindex-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </pluginMangement>
+              </code>
+            </pre>
+          </section>
+          <section>
+            <p>But (usually) end up in something like this</p>
+            <pre>
+              <code class="hljs xml" data-trim data-line-numbers="5-9">
+  <plugin>
+    <groupId>org.sonatype.ossindex.maven</groupId>
+    <artifactId>ossindex-maven-plugin</artifactId>
+    <configuration>
+      <exclude>
+        <groupId>commons-fileupload</groupId>
+        <artifactId>commons-fileupload</artifactId>
+        <version>1.3</version>
+      </exclude>
+    </configuration>
+  </plugin>
+              </code>
+            </pre>
           </section>
         </section>
 
