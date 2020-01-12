@@ -71,14 +71,14 @@
             <p>Tools can reduce this pain</p>
             <pre>
               <code class="hljs xml" data-trim data-line-numbers="4-5">
-  <pluginMangement>
-    <plugins>
-      <plugin>
-        <groupId>org.sonatype.ossindex.maven</groupId>
-        <artifactId>ossindex-maven-plugin</artifactId>
-      </plugin>
-    </plugins>
-  </pluginMangement>
+                <pluginMangement>
+                  <plugins>
+                    <plugin>
+                      <groupId>org.sonatype.ossindex.maven</groupId>
+                      <artifactId>ossindex-maven-plugin</artifactId>
+                    </plugin>
+                  </plugins>
+                </pluginMangement>
               </code>
             </pre>
           </section>
@@ -101,17 +101,17 @@
             <p>So (usually) it ends up in something like this</p>
             <pre>
               <code class="hljs xml" data-trim data-line-numbers="5-9">
-  <plugin>
-    <groupId>org.sonatype.ossindex.maven</groupId>
-    <artifactId>ossindex-maven-plugin</artifactId>
-    <configuration>
-      <exclude>
-        <groupId>commons-fileupload</groupId>
-        <artifactId>commons-fileupload</artifactId>
-        <version>1.3</version>
-      </exclude>
-    </configuration>
-  </plugin>
+                <plugin>
+                  <groupId>org.sonatype.ossindex.maven</groupId>
+                  <artifactId>ossindex-maven-plugin</artifactId>
+                  <configuration>
+                    <exclude>
+                      <groupId>commons-fileupload</groupId>
+                      <artifactId>commons-fileupload</artifactId>
+                      <version>1.3</version>
+                    </exclude>
+                  </configuration>
+                </plugin>
               </code>
             </pre>
           </section>
