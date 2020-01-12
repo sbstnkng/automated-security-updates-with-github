@@ -11,7 +11,8 @@
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/reveal.css" />
-    <link rel="stylesheet" href="css/theme/league.css" />
+    <link rel="stylesheet" href="css/theme/black.css" />
+    <link rel="stylesheet" href="css/custom.css" />
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="lib/css/monokai.css" />
@@ -30,47 +31,105 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section data-markdown>
-          <textarea data-template>
-						## Automated Security Updates
-						with GitHub
-					</textarea
-          >
+        <section>
+          <h2>Automated Security Updates</h2>
+          <p>
+            with
+            <a
+              href="https://help.github.com/en/github/managing-security-vulnerabilities/configuring-automated-security-updates"
+            >
+              <i class="fab fa-github"></i> GitHub</a
+            >
+          </p>
         </section>
-        <section data-markdown>
-          <textarea data-template>
-						## What?
-					</textarea
-          >
+
+        <section>
+          <section>
+            <h2>What?</h2>
+          </section>
+          <section>
+            <div style="font-size: 100px; font-weight: bold;">
+              <img
+                src="images/github-icon.png"
+                width="100px"
+                alt=""
+                style="vertical-align: text-top;"
+              />
+              <span>+</span>
+              <img
+                src="images/dependabot-icon.png"
+                width="100px"
+                alt=""
+                style="vertical-align: text-top;"
+              />
+            </div>
+            <p>
+              Dependabot has been acquired by GitHub in May 2019
+            </p>
+          </section>
+          <section>
+            <p>Dependabot features will be integrated directly into GitHub</p>
+          </section>
+          <section>
+            <p>
+              First integration:
+              <a
+                href="https://github.blog/2019-05-23-introducing-new-ways-to-keep-your-code-secure/#automated-security-fixes-with-dependabot"
+                >security fix PRs</a
+              >
+              <img src="images/security-pr.png" alt="" />
+            </p>
+          </section>
         </section>
-        <section data-markdown>
-          <textarea data-template>
-						## Why?
-					</textarea
-          >
+
+        <section>
+          <section>
+            <h2>Why?</h2>
+          </section>
+          <section>
+            <p>
+              Modern applications rely on hundreds of open source dependencies.
+            </p>
+            <p>
+              Staying on top of security vulnerabilities in those dependencies
+              requires constant attention.
+            </p>
+          </section>
         </section>
-        <section data-markdown>
-          <textarea data-template>
-						## How?
-					</textarea
-          >
+
+        <section>
+          <h2>How?</h2>
         </section>
-        <section data-markdown>
-          <textarea data-template>
-						## More automation?
-					</textarea
-          >
+
+        <section>
+          <h2>More automation?</h2>
         </section>
-        <section data-markdown>
-          <textarea data-template>
-						## Thank you!
-					</textarea
-          >
+
+        <section style="text-align: left;">
+          <h1>THANK YOU!</h1>
+          <ul>
+            <li>
+              <a
+                href="https://help.github.com/en/github/managing-security-vulnerabilities/configuring-automated-security-updates"
+                >Configuring automated security updates</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://help.github.com/en/github/visualizing-repository-data-with-graphs/listing-the-packages-that-a-repository-depends-on#supported-package-ecosystems"
+                >Supported package ecosystems</a
+              >
+            </li>
+          </ul>
         </section>
       </div>
     </div>
 
     <script src="js/reveal.js"></script>
+    <script
+      src="https://kit.fontawesome.com/74b7778ed2.js"
+      crossorigin="anonymous"
+    ></script>
 
     <script>
       // More info about config & dependencies:
