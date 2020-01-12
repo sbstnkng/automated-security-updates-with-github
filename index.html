@@ -36,6 +36,7 @@
           <p>
             with
             <a
+              target=”_blank”
               href="https://help.github.com/en/github/managing-security-vulnerabilities/configuring-automated-security-updates"
             >
               <i class="fab fa-github"></i> GitHub</a
@@ -150,14 +151,27 @@
             <p>...and starts to integrate its features directly into GitHub</p>
           </section>
           <section>
-            <p>
-              First integration:
+            <h4>First integration</h4>
+            <h3>
               <a
+                target=”_blank”
                 href="https://github.blog/2019-05-23-introducing-new-ways-to-keep-your-code-secure/#automated-security-fixes-with-dependabot"
-                >security fix PRs</a
-              >
-              <img src="images/security-pr.png" alt="" />
+                >
+                Automated security fixes
+              </a>
+            </h3>
+          </section>
+          <section>
+            <img src="images/github-security-pr-example.png" alt="">
+          </section>
+          <section>
+            <h3 class="text-blue">Compatibility score</h3>
+            <p>
+              The percentage of CI runs that passed when updating between relevant versions of the dependency
             </p>
+          </section>
+          <section>
+            <img src="images/github-security-pr-compatibility-score.png" alt="">
           </section>
         </section>
 
@@ -208,7 +222,62 @@
         </section>
 
         <section>
-          <h2>More automation?</h2>
+          <section>
+            <h2>More automation?</h2>
+          </section>
+          <section>
+            <div style="font-size: 100px; font-weight: bold;">
+              <img
+                src="images/github-icon.png"
+                width="100px"
+                alt=""
+                style="vertical-align: text-top;"
+              />
+              <span>+</span>
+              <img
+                src="images/probot-logo.png"
+                width="100px"
+                alt=""
+                style="vertical-align: text-top;"
+              />
+            </div>
+            <p>
+              Merge security PRs automatically with</br>
+              <a href="https://github.com/bobvanderlinden/probot-auto-merge">probot auto-merge</a>
+            </p>
+          </section>
+          <section>
+            <pre>.github/auto-merge.yml</pre>
+            <pre>
+              <code class="hljs yaml" data-trim data-line-numbers>
+                updateBranch: true
+                deleteBranchAfterMerge: true
+                reportStatus: true
+
+                blockingLabels:
+                  - blocked
+                  - wip
+
+                requiredLabels:
+                  - dependencies
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h3 class="text-red">Important</h3>
+            <p>Set up a <a target="_blank" href="https://help.github.com/en/github/administering-a-repository/defining-the-mergeability-of-pull-requests">branch protection rule</a>...</p>
+            <img src="images/github-branch-protection-rules.png" alt="">
+          </section>
+          <section>
+            <img src="images/github-security-pr-checks-passed.png" alt="">
+            <p>...to make sure your application has been <span class="text-green">tested</span> before its PR merge</p>
+          </section>
+          <section>
+            <img src="images/probot-auto-merge-confirm-message.png" alt="">
+            <p style="font-size: 6rem;">
+              <i class="fas fa-check text-green"></i> Done
+            </p>
+          </section>
         </section>
 
         <section style="text-align: left;">
@@ -216,18 +285,20 @@
           <ul>
             <li>
               <a
+                target=”_blank”
                 href="https://help.github.com/en/github/managing-security-vulnerabilities/configuring-automated-security-updates"
                 >Configuring automated security updates</a
               >
             </li>
             <li>
               <a
+                target=”_blank”
                 href="https://help.github.com/en/github/visualizing-repository-data-with-graphs/listing-the-packages-that-a-repository-depends-on#supported-package-ecosystems"
                 >Supported package ecosystems</a
               >
             </li>
             <li>
-              <a href="https://github.com/advisories">GitHub Advisory Database</a>
+              <a target=”_blank” href="https://github.com/advisories">GitHub Advisory Database</a>
             </li>
           </ul>
         </section>

@@ -5,5 +5,13 @@
 }
 
 .text-blue {
-  color: #1b91ff;
+  color: #42affa !important;
+}
+
+.text-red {
+  color: #f92672 !important;
+}
+
+.text-green {
+  color: #a6e22e !important;
 }
