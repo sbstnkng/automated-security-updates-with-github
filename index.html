@@ -347,6 +347,9 @@
       // - https://github.com/hakimel/reveal.js#configuration
       // - https://github.com/hakimel/reveal.js#dependencies
       Reveal.initialize({
+        // PDF Export
+        // print all fragments in their visible states on the same slide
+        pdfSeparateFragments: false,
         dependencies: [
           { src: 'plugin/markdown/marked.js' },
           { src: 'plugin/markdown/markdown.js' },
