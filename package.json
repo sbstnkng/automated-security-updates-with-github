@@ -33,7 +33,7 @@
     "grunt-contrib-qunit": "^6.0.0",
     "grunt-contrib-uglify": "^5.0.0",
     "grunt-contrib-watch": "^1.1.0",
-    "grunt-sass": "^3.0.2",
+    "grunt-sass": "^4.0.0",
     "grunt-zip": "~1.0.0",
     "load-grunt-tasks": "^5.1.0",
     "node-sass": "^7.0.0",
